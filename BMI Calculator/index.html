@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BMI Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <form id="form" onsubmit="return false">
+
+            <div id="heading">
+                <h3>Body Mass Index(BMI)</h3>
+            </div>
+
+            <div id="data">
+                <label for="weight">Weight</label>
+                <input type="text" id="weight" placeholder="Weight in Kg's">
+                <label for="height">Height</label>
+                <input type="text" id="height" placeholder="Height in Feet">
+                <label for="BMI">BMI Value</label>
+                <input readonly type="text" id="BMI" placeholder="Your BMI Percentage">
+                <input type="submit" id="btn" onclick="fun()" value="Check BMI">
+            </div>
+
+            <div id="heading">
+                <h3 id="description">A healthy BMI ranges between 19 and 25</h3>
+            </div>
+
+        </form>
+        
+        <script src="js.js"></script>
+    </body>
+</html>
